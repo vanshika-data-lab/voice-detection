@@ -326,7 +326,35 @@ def detect_ai_voice(features: dict, language: str) -> tuple[str, float, str]:
     
     return classification, round(confidence_score, 2), explanation
 
-
+@app.get("/api/voice-detection")
+async def detect_voice_info():
+    """
+    Handle GET requests - provides API usage information
+    Prevents 405 Method Not Allowed error when portals test the endpoint
+    """
+    return {
+        "status": "info",
+        "message": "This endpoint requires POST method",
+        "usage": {
+            "method": "POST",
+            "endpoint": "/api/voice-detection",
+            "headers": {
+                "Content-Type": "application/json",
+                "x-api-key": "sk_test_123456789"
+            },
+            "body": {
+                "language": "Tamil|English|Hindi|Malayalam|Telugu",
+                "audioFormat": "mp3",
+                "audioBase64": "base64_encoded_mp3_audio"
+            }
+        },
+        "example": {
+            "language": "Tamil",
+            "audioFormat": "mp3",
+            "audioBase64": "UklGRiQAAABXQVZFZm10IBAAAAABAAEA..."
+        }
+    }
+    
 @app.post("/api/voice-detection", response_model=VoiceResponse)
 async def detect_voice(
     request: VoiceRequest,
