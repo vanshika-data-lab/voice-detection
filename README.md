@@ -1,6 +1,6 @@
-# 🎙️ AI Voice Detection API
+# 🎙️ AI-Generated Voice Detection API
 
-An intelligent REST API that detects whether a voice sample is AI-generated or spoken by a real human. Supports 5 languages: **Tamil, English, Hindi, Malayalam, and Telugu**.
+An intelligent REST API that detects whether a voice sample is AI-generated or spoken by a real human. Supports 5 languages: **Tamil, English, Hindi, Malayalam, and Telugu**.The system accepts audio input and return a structred JSON response.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
@@ -523,7 +523,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 👨‍💻 Author
 
-Created for AI Voice Detection Hackathon
+Created for India AI Impact Buildathon { Problem Statement 1:- AI-Generated Voice Detection (Mutli-Langauge)}
 
 ## 🙏 Acknowledgments
 
@@ -541,7 +541,7 @@ For issues and questions:
 
 ## 🎯 Hackathon Submission
 
-**API Endpoint**: `https://your-deployment-url.com/api/voice-detection`  
+**API Endpoint**: `https://voice-detection-production.up.railway.app/api/voice-detection`  
 **API Key**: `sk_test_123456789`
 
 ### Testing the Submission
@@ -579,6 +579,6 @@ curl -X POST https://your-deployment-url.com/api/voice-detection \
 
 ---
 
-**Made with ❤️ for the AI Voice Detection Hackathon**
+**Made with ❤️ for the India AI Impact Buildathon**
 
 ⭐ **Star this repository if you find it useful!**
